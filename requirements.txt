@@ -1,0 +1,10 @@
+pandas
+numpy
+matplotlib
+scikit-learn
+xgboost
+streamlit
+pyngrok
+statsmodels
+prophet
+yfinance
