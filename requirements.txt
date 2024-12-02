@@ -8,3 +8,4 @@ pyngrok
 statsmodels
 prophet
 yfinance
+plotly
