@@ -130,7 +130,6 @@ st.write("""
 st.header("**Insights:**")
 st.write (""" 
 **1° Insight: Geopolítica e Preços do Petróleo: Um Ciclo de Alta e Baixa**
-
 Os picos de preços e quedas são fortemente ligados a guerras, instabilidades e acordos (como o da OPEP+ em 2016), confirmando a correlação entre geopolítica e mercado.
 
 **2° Insight: Crescimento Econômico Global como Motor da Demanda**
