@@ -174,6 +174,11 @@ Superou todos os outros modelos, apresentando a menor taxa de erro e a melhor ca
 
 st.subheader ("Avaliação dos Modelos")
 
+st.write ("""
+As métricas utilizadas para avaliar os modelos foram:
+
+*MAE (Erro Médio Absoluto): Mede a média absoluta dos erros.
+""")
 st.text ("""
 Os resultados foram os seguintes:
 
