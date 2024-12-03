@@ -211,7 +211,7 @@ MSE: 52.2327502612595.
 MAPE: 8.89090381557282.
 """)
 
-st.header ("Gráfico para Previsão")
+st.header ("Gráfico de Previsão de Preço de Petróleo (Machine Learning)")
 
 # Importação das bibliotecas
 import streamlit as st
