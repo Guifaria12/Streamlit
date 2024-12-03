@@ -137,7 +137,15 @@ st.write ("""
 
 Modelos utilizados 
 
-1° Regressão Linear
+*1° Regressão Linear*
+* Este modelo foi escolhido como um ponto de partida por sua simplicidade e capacidade de identificar relações lineares entre as variáveis.
+* Vantagens: Fácil de interpretar e implementar.
+* Desempenho: Resultados aceitáveis para variáveis com correlação linear, mas limitado em cenários com padrões complexos.
+
+2° Árvore de Decisão
+* Esse modelo foi construído para explorar padrões não lineares e interações entre variáveis.
+* Vantagens: Capacidade de capturar relações complexas e variáveis categóricas sem necessidade de transformações adicionais.
+* Desempenho: Melhor que a regressão linear, mas apresentou tendência ao overfitting (adaptação exagerada ao conjunto de treino).
 
 """)
 
