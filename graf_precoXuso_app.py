@@ -2,6 +2,9 @@ import pandas as pd
 import plotly.graph_objects as go
 import streamlit as st
 
+
+st.write("Hello World")
+
 # Carregar os dados de preço do petróleo
 url_preco_petroleo = 'https://docs.google.com/spreadsheets/d/1WSL2mbFwfnQR5vDF73UmcOK5_zf5NGelasCCo8_qCOk/export?format=csv'
 df_preco_petroleo = pd.read_csv(url_preco_petroleo)
