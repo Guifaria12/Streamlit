@@ -122,4 +122,4 @@ st.write("
 " * 1990-1991: Guerra do Golfo: Conflito no Oriente Médio elevou brevemente os preços, mas a recessão global limitou o impacto."
 " * 2001: Ataques de 11 de Setembro: Aumento temporário nos preços e foco na segurança energética dos EUA."
 " * 2003: Invasão do Iraque: Instabilidade geopolítica impulsionou preços durante crescimento global acelerado."
-         ")
+         )
