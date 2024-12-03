@@ -308,5 +308,5 @@ if st.button('Prever'):
     st.plotly_chart(fig, use_container_width=True)
 
     # Exibir métricas
-    st.write("Métricas do modelo:")
+    st.write("**Métricas do modelo:**")
     st.write(df_metrics[['Métrica', 'Valor']])
