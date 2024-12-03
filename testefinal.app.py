@@ -124,7 +124,7 @@ st.writer("""
  * 2016: Acordo da OPEP+: Cortes coordenados de produção estabilizaram e recuperaram os preços.
  * 2020: Pandemia da COVID-19: Lockdowns globais colapsaram a demanda, levando a preços negativos.
  * 2022: Guerra na Ucrânia: Sanções à Rússia dispararam preços devido à insegurança no fornecimento global.
- """ )
+""")
 
 
 st.header("**Insights:**")
