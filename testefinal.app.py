@@ -311,6 +311,8 @@ if st.button('Prever'):
     st.write("**Métricas do modelo:**")
     st.write(df_metrics[['Métrica', 'Valor']])
 
+st.markdown("<hr style='border:1px solid #6e42ad;'>", unsafe_allow_html=True)
+
 
 st.header ("Conclusão")
 
