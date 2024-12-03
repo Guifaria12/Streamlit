@@ -177,7 +177,10 @@ st.subheader ("Avaliação dos Modelos")
 st.write ("""
 As métricas utilizadas para avaliar os modelos foram:
 
-*MAE (Erro Médio Absoluto): Mede a média absoluta dos erros.
+* **MAE (Erro Médio Absoluto):** Mede a média absoluta dos erros.
+* **Mean Squared Error (MSE):** Para medir a precisão do modelo em prever valores numéricos.
+* **MAPE (Erro Percentual Absoluto Médio):** Expressa o erro em termos percentuais.
+* **R² (Coeficiente de Determinação):** Para avaliar a proporção da variação dos dados explicada pelo modelo.
 """)
 st.text ("""
 Os resultados foram os seguintes:
