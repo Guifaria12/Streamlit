@@ -312,6 +312,5 @@ if st.button('Prever'):
     st.write("Métricas modelo:")
     st.write(df_metrics[['Métrica', 'Valor']])
 
+st.write ("TESTE")
 
-    st.write("Métricas modelo:")
-    st.write(df_metrics[['Métrica', 'Valor']])
