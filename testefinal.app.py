@@ -170,8 +170,27 @@ Resistente a overfitting devido ao uso de regularização e boosting.
 Desempenho:
 Superou todos os outros modelos, apresentando a menor taxa de erro e a melhor capacidade de generalização. Mostrou-se ideal para séries temporais onde fatores externos têm grande influência.
 
-
 """)
 
+st.subheader ("Avaliação dos Modelos")
 
+st.write ("""
+Os resultados foram os seguintes:
+
+**XGBoost Metrics:**
+MAE: 2.2787702026367187
+MSE: 9.370494869745423
+RMSE: 3.0611264053850213
+R2: -0.1074362651768701
+
+**Prophet Metrics:**
+MAE: 15.746337317234484
+MSE: 257.57486298101446
+MAPE: 20.8705505543171
+
+**SARIMAX Metrics:**
+MAE: 6.588024306967685
+MSE: 52.2327502612595
+MAPE: 8.89090381557282
+""")
 
