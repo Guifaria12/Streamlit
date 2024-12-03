@@ -36,6 +36,36 @@ st.write(
 )
 
 st.header("**Análise Exploratória dos Dados**")
+# Carregar os dados de preço do petróleo
+url_preco_petroleo = 'https://docs.google.com/spreadsheets/d/1WSL2mbFwfnQR5vDF73UmcOK5_zf5NGelasCCo8_qCOk/export?format=csv'
+df_preco_petroleo = pd.read_csv(url_preco_petroleo)
+
+# Converter a coluna 'Data (Descending)' para o formato de data
+df_preco_petroleo['Data (Descending)'] = pd.to_datetime(df_preco_petroleo['Data (Descending)'])
+
+# Ajustar a coluna 'Preço - petróleo bruto - Brent (FOB)' para valores numéricos
+df_preco_petroleo['Preço - petróleo bruto - Brent (FOB)'] = df_preco_petroleo['Preço - petróleo bruto - Brent (FOB)'].str.replace(',', '.').astype(float)
+
+# Carregar os dados da matriz energética
+url_matriz_energica = 'https://docs.google.com/spreadsheets/d/1SjoisxQ5WqMsWFCIJ9NgzaQZuNmJ0UPxkG2cBXkW5PM/export?format=csv'
+df_matriz_energica = pd.read_csv(url_matriz_energica)
+
+# Processar e limpar os dados da matriz energética
+df_matriz_energica = df_matriz_energica[['Ano', 'Petróleo']]
+df_matriz_energica['Ano'] = pd.to_datetime(df_matriz_energica['Ano'], format='%Y')
+df_matriz_energica['Petróleo'] = df_matriz_energica['Petróleo'].str.replace('%', '').astype(int)
+
+# Filtrar dados após o ano de 1987
+df_matriz_energica = df_matriz_energica.loc[df_matriz_energica['Ano'] >= '1987']
+
+# Dropdowns para selecionar os anos
+ano_inicial = st.selectbox("Selecione o ano inicial:", range(1987, df_matriz_energica['Ano'].dt.year.max() + 1))
+ano_final = st.selectbox("Selecione o ano final:", range(ano_inicial, 2024 + 1))
+
+# Filtrar os dados com base nos anos selecionados
+df_matriz_energica_filtrado = df_matriz_energica.loc[(df_matriz_energica['Ano'].dt.year >= ano_inicial) & (df_matriz_energica['Ano'].dt.year <= ano_final)]
+df_preco_petroleo_filtrado = df_preco_petroleo.loc[(df_preco_petroleo['Data (Descending)'].dt.year >= ano_inicial) & (df_preco_petroleo['Data (Descending)'].dt.year <= ano_final)]
+
 # Criar mensagens personalizadas para hover
 hover_message_preco = [
     "Alta histórica" if 2008 <= data.year <= 2010 else
@@ -84,4 +114,4 @@ fig.update_layout(
 )
 
 # Exibir o gráfico interativo no Streamlit
-st.plotly_chart(Figo)
+st.plotly_chart(fig)
