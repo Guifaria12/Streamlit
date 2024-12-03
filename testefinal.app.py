@@ -245,7 +245,6 @@ TARGET = 'price'
 
 # Interface Streamlit
 st.markdown('<style>div[role="listbox"] ul{background-color: #6e42ad}; </style>', unsafe_allow_html=True)
-st.markdown("<h1 style='text-align: center;'>Previsão de Preço de Petróleo (Machine Learning)</h1>", unsafe_allow_html=True)
 st.warning('Indique quantos Meses pretende prever e depois clique no botão **PREVER** no final da página.')
 
 input_days = int(st.slider('Selecione a quantidade de MESES para previsão', 1, 12))
