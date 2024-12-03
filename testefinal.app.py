@@ -34,3 +34,54 @@ st.write(
     "Por ser um dos principais indicadores econômicos, compreender sua dinâmica de variação ao longo do tempo é "
     "essencial para a tomada de decisões estratégicas em um ambiente econômico volátil e interconectado."
 )
+
+st.header("**Análise Exploratória dos Dados**")
+# Criar mensagens personalizadas para hover
+hover_message_preco = [
+    "Alta histórica" if 2008 <= data.year <= 2010 else
+    "Queda significativa" if 2014 <= data.year <= 2016 else
+    "Estável" for data in df_preco_petroleo_filtrado["Data (Descending)"]
+]
+
+hover_message_uso = [
+    "Aumento do consumo" if ano.year <= 2005 else
+    "Redução do consumo" if ano.year > 2005 else
+    "Neutro" for ano in df_matriz_energica_filtrado['Ano']
+]
+
+# Criar o gráfico interativo com Plotly
+fig = go.Figure()
+
+# Plot do preço do petróleo com mensagens personalizadas
+fig.add_trace(go.Scatter(
+    x=df_preco_petroleo_filtrado["Data (Descending)"],
+    y=df_preco_petroleo_filtrado["Preço - petróleo bruto - Brent (FOB)"],
+    mode='lines',
+    name="Preço",
+    line=dict(color="black"),
+    customdata=hover_message_preco,
+    hovertemplate='<b>Preço do Petróleo</b><br>Ano: %{x}<br>Preço: %{y:.2f}<br>Mensagem: %{customdata}<extra></extra>'
+))
+
+# Plot do uso de petróleo com mensagens personalizadas
+fig.add_trace(go.Scatter(
+    x=df_matriz_energica_filtrado['Ano'],
+    y=df_matriz_energica_filtrado['Petróleo'],
+    mode='lines',
+    name="Uso de Petróleo (%)",
+    line=dict(color="blue", dash='dash'),
+    customdata=hover_message_uso,
+    hovertemplate='<b>Uso de Petróleo (%)</b><br>Ano: %{x}<br>Uso: %{y}%<br>Mensagem: %{customdata}<extra></extra>'
+))
+
+# Personalizar o gráfico
+fig.update_layout(
+    title="Comparação preço x uso",
+    xaxis_title="Ano",
+    yaxis_title="Valores",
+    legend_title="Legenda",
+    template="plotly_white"
+)
+
+# Exibir o gráfico interativo no Streamlit
+st.plotly_chart(Figo)
