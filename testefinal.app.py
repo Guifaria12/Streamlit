@@ -126,6 +126,8 @@ st.write("""
  * **2022:** Guerra na Ucrânia: Sanções à Rússia dispararam preços devido à insegurança no fornecimento global.
 """)
 
+st.markdown("<hr style='border:1px solid #000000;'>", unsafe_allow_html=True)
+
 
 st.header("**Insights:**")
 st.write (""" 
@@ -142,6 +144,7 @@ O primeiro gráfico (comparação preço x uso) reflete uma queda significativa 
 A queda extrema de 2020 é exemplificada pela pandemia de COVID-19, que abalou o equilíbrio de oferta e demanda. A recuperação gradual nos anos subsequentes, vista no segundo gráfico, reflete intervenções e ajustes no mercado.
 """)
 
+st.markdown("<hr style='border:1px solid #000000;'>", unsafe_allow_html=True)
 
 st.header("**Modelos de Machine Learning:**")
 
@@ -180,6 +183,8 @@ Desempenho:
 Superou todos os outros modelos, apresentando a menor taxa de erro e a melhor capacidade de generalização. Mostrou-se ideal para séries temporais onde fatores externos têm grande influência.
 
 """)
+st.markdown("<hr style='border:1px solid #000000;'>", unsafe_allow_html=True)
+
 
 st.subheader ("Avaliação dos Modelos")
 
@@ -210,6 +215,8 @@ MAE: 6.588024306967685.
 MSE: 52.2327502612595.
 MAPE: 8.89090381557282.
 """)
+
+st.markdown("<hr style='border:1px solid #000000;'>", unsafe_allow_html=True)
 
 st.header ("Gráfico de Previsão de Preço de Petróleo (Machine Learning)")
 
@@ -311,7 +318,7 @@ if st.button('Prever'):
     st.write("**Métricas do modelo:**")
     st.write(df_metrics[['Métrica', 'Valor']])
 
-st.markdown("<hr style='border:1px solid #6e42ad;'>", unsafe_allow_html=True)
+st.markdown("<hr style='border:1px solid #000000;'>", unsafe_allow_html=True)
 
 
 st.header ("Conclusão")
