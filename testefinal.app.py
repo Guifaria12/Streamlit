@@ -119,6 +119,12 @@ st.plotly_chart(fig)
 st.header("**Eventos que impactaram os preços:**")
 
 st.write("""
- * 1990-1991: Guerra do Golfo: Conflito no Oriente Médio elevou brevemente os preços, mas a recessão global limitou o impacto."
- * 2001: Ataques de 11 de Setembro: Aumento temporário nos preços e foco na segurança energética dos EUA."
- * 2003: Invasão do Iraque: Instabilidade geopolítica impulsionou preços durante crescimento global acelerado.""" )
+ * 1990-1991: Guerra do Golfo: Conflito no Oriente Médio elevou brevemente os preços, mas a recessão global limitou o impacto.
+ * 2001: Ataques de 11 de Setembro: Aumento temporário nos preços e foco na segurança energética dos EUA.
+ * 2003: Invasão do Iraque: Instabilidade geopolítica impulsionou preços durante crescimento global acelerado.
+ * 2008: Crise Financeira Global: Recessão mundial derrubou a demanda e fez os preços caírem drasticamente.
+ * 2014-2016: Petróleo de Xisto: Excesso de oferta dos EUA levou a queda histórica nos preços.
+ * 2016: Acordo da OPEP+: Cortes coordenados de produção estabilizaram e recuperaram os preços.
+ * 2020: Pandemia da COVID-19: Lockdowns globais colapsaram a demanda, levando a preços negativos.
+ * 2022: Guerra na Ucrânia: Sanções à Rússia dispararam preços devido à insegurança no fornecimento global.
+ """ )
