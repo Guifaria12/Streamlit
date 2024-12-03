@@ -128,3 +128,16 @@ st.write("""
  * 2020: Pandemia da COVID-19: Lockdowns globais colapsaram a demanda, levando a preços negativos.
  * 2022: Guerra na Ucrânia: Sanções à Rússia dispararam preços devido à insegurança no fornecimento global.
  """ )
+
+st.header("**Insights:**")
+st.write (" COLOCAR AQUI OS INSIGHTS ")
+
+st.header("**Modelos de Machine Learning:**")
+st.write ("""
+
+Modelos utilizados 
+
+1° Regressão Linear
+
+""")
+
