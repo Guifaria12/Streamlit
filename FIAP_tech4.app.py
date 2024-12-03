@@ -93,7 +93,7 @@ fig.add_trace(go.Scatter(
     y=df_preco_petroleo_filtrado["Preço - petróleo bruto - Brent (FOB)"],
     mode='lines',
     name="Preço",
-    line=dict(color="black"),
+    line=dict(color="red"),
     customdata=hover_message_preco,
     hovertemplate='<b>Preço do Petróleo</b><br>Ano: %{x}<br>Preço: %{y:.2f}<br>Mensagem: %{customdata}<extra></extra>'
 ))
