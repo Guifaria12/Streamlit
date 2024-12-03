@@ -129,8 +129,10 @@ st.write("""
  * 2022: Guerra na Ucrânia: Sanções à Rússia dispararam preços devido à insegurança no fornecimento global.
  """ )
 
+
 st.header("**Insights:**")
 st.write (" COLOCAR AQUI OS INSIGHTS ")
+
 
 st.header("**Modelos de Machine Learning:**")
 
@@ -138,20 +140,36 @@ st.subheader ("Modelos utilizados ")
 
 st.write ("""
 
-**1° Regressão Linear**
-* Este modelo foi escolhido como um ponto de partida por sua simplicidade e capacidade de identificar relações lineares entre as variáveis.
-* Vantagens: Fácil de interpretar e implementar.
-* Desempenho: Resultados aceitáveis para variáveis com correlação linear, mas limitado em cenários com padrões complexos.
+**ARIMA (AutoRegressive Integrated Moving Average)**
 
-**2° Árvore de Decisão**
-* Esse modelo foi construído para explorar padrões não lineares e interações entre variáveis.
-* Vantagens: Capacidade de capturar relações complexas e variáveis categóricas sem necessidade de transformações adicionais.
-* Desempenho: Melhor que a regressão linear, mas apresentou tendência ao overfitting (adaptação exagerada ao conjunto de treino).
+* Este modelo foi escolhido por sua robustez na análise de séries temporais com dados estacionários ou transformados para estacionaridade.
+Vantagens:
+Excelente para capturar padrões sazonais e tendências históricas de curto prazo.
+Permite modelar a autocorrelação entre observações.
 
-**3° Random Forest**
-* Por fim, utilizou-se um ensemble de árvores (Random Forest) para melhorar a robustez e a generalização.
-* Vantagens: Reduz o overfitting ao combinar várias árvores independentes.
-* Desempenho: Superou os outros modelos em consistência e precisão, mostrando a menor taxa de erro no conjunto de teste.
+Desempenho:
+Funcionou bem em séries com padrões previsíveis, mas apresentou limitações ao lidar com dados mais complexos ou não estacionários, especialmente onde mudanças estruturais ocorrem.
+
+
+**Prophet**
+* O Prophet foi escolhido por sua capacidade de modelar séries temporais com sazonalidades variadas e componentes exógenos, como feriados e eventos especiais.
+Vantagens:
+Fácil de implementar e ajustar, com bom suporte para sazonalidade e eventos externos.
+Robusto contra dados ausentes e outliers.
+
+Desempenho:
+Superou o ARIMA ao capturar padrões mais complexos e oferecer previsões confiáveis. Além disso, gerou intervalos de confiança úteis para análise de riscos.
+
+
+**XGBoost Regressor**
+* O XGBoost foi construído para explorar padrões mais complexos nos dados, utilizando um modelo baseado em árvores de decisão com técnicas de boosting.
+Vantagens:
+Capacidade de capturar relações não lineares e interações complexas.
+Resistente a overfitting devido ao uso de regularização e boosting.
+
+Desempenho:
+Superou todos os outros modelos, apresentando a menor taxa de erro e a melhor capacidade de generalização. Mostrou-se ideal para séries temporais onde fatores externos têm grande influência.
+
 
 """)
 
