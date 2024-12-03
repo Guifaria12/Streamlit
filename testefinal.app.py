@@ -28,5 +28,9 @@ df_matriz_energica = df_matriz_energica.loc[df_matriz_energica['Ano'] >= '1987']
 
 st.header("**Introdução**")
 
-st.writer("O preço do petróleo desempenha um papel fundamental na economia global, influenciando mercados financeiros, políticas energéticas e estratégias corporativas em diversos setores. Por ser um dos principais indicadores econômicos, compreender sua dinâmica de variação ao longo do tempo é essencial para a tomada de decisões estratégicas em um ambiente econômico volátil e interconectado.
-Este projeto foi desenvolvido como parte de uma consultoria especializada, com o objetivo de atender à demanda de um cliente do segmento energético. A proposta consiste na criação de um dashboard interativo que permita visualizar, explorar e gerar insights sobre o comportamento histórico do preço do petróleo Brent. Além disso, foi solicitado o desenvolvimento de um modelo de Machine Learning para previsão de preços diários, fornecendo uma ferramenta preditiva para auxiliar em decisões informadas e antecipação de tendências. ")
+st.write(
+    "O preço do petróleo desempenha um papel fundamental na economia global, "
+    "influenciando mercados financeiros, políticas energéticas e estratégias corporativas em diversos setores. "
+    "Por ser um dos principais indicadores econômicos, compreender sua dinâmica de variação ao longo do tempo é "
+    "essencial para a tomada de decisões estratégicas em um ambiente econômico volátil e interconectado."
+)
