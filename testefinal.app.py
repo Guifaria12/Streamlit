@@ -310,3 +310,13 @@ if st.button('Prever'):
     # Exibir métricas
     st.write("**Métricas do modelo:**")
     st.write(df_metrics[['Métrica', 'Valor']])
+
+
+st.header ("Conclusão")
+
+st.write ("""
+Com os dados apresentados, é possível entender que estar atento aos acontecimentos geopolíticos é fundamental para compreender a variação do preço do barril de petróleo. Além disso, analisar a sua variação e projeção permite que, em um ambiente de negócios, decisões estratégicas sejam tomadas de forma mais planejada e eficiente. Por exemplo, a abertura e o sucesso de um novo empreendimento estão intimamente relacionados a esses fatores, uma vez que influenciam diretamente a logística de abastecimento, a atração de clientes e outros aspectos essenciais para a operação do negócio.
+
+Por fim, explorar esses dados exige uma compreensão não apenas de sua variação histórica, mas também da conexão com questões geopolíticas, econômicas e ambientais que impactam o mercado global de energia. Esse conhecimento permite uma visão mais ampla e assertiva, essencial para antecipar tendências e minimizar riscos no desenvolvimento de estratégias empresariais.
+
+""")
