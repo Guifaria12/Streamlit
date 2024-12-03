@@ -129,16 +129,16 @@ st.write("""
 
 st.header("**Insights:**")
 st.write (""" 
-**1° Insight: Geopolítica e Preços do Petróleo: Um Ciclo de Alta e Baixa**
+**1° Insight: Geopolítica e Preços do Petróleo: Um Ciclo de Alta e Baixa** - 
 Os picos de preços e quedas são fortemente ligados a guerras, instabilidades e acordos (como o da OPEP+ em 2016), confirmando a correlação entre geopolítica e mercado.
 
-**2° Insight: Crescimento Econômico Global como Motor da Demanda**
+**2° Insight: Crescimento Econômico Global como Motor da Demanda** - 
 Períodos de alta de preços coincidem com fases de crescimento econômico (como em 2003 e pré-2008), enquanto recessões resultam em quedas significativas.
 
-**3° Insight: Impacto de Inovações e Excesso de Oferta**
+**3° Insight: Impacto de Inovações e Excesso de Oferta** - 
 O primeiro gráfico (comparação preço x uso) reflete uma queda significativa em 2014-2016, relacionada à ascensão do petróleo de xisto, evidenciando o impacto das inovações tecnológicas.
 
-**4° Insight: Estabilização e Disrupções:**
+**4° Insight: Estabilização e Disrupções:** - 
 A queda extrema de 2020 é exemplificada pela pandemia de COVID-19, que abalou o equilíbrio de oferta e demanda. A recuperação gradual nos anos subsequentes, vista no segundo gráfico, reflete intervenções e ajustes no mercado.
 """)
 
