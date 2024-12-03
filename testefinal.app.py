@@ -174,7 +174,7 @@ Superou todos os outros modelos, apresentando a menor taxa de erro e a melhor ca
 
 st.subheader ("Avaliação dos Modelos")
 
-st.write ("""
+st.text ("""
 Os resultados foram os seguintes:
 
 **XGBoost Metrics:**
