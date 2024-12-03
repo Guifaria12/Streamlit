@@ -30,8 +30,6 @@ df_matriz_energica = df_matriz_energica.loc[df_matriz_energica['Ano'] >= '1987']
 ano_inicial = st.selectbox("Selecione o ano inicial:", range(1987, df_matriz_energica['Ano'].dt.year.max() + 1))
 ano_final = st.selectbox("Selecione o ano final:", range(ano_inicial, 2024 + 1))
 
-st.write("Hello World")
-
 # Filtrar os dados com base nos anos selecionados
 df_matriz_energica_filtrado = df_matriz_energica.loc[(df_matriz_energica['Ano'].dt.year >= ano_inicial) & (df_matriz_energica['Ano'].dt.year <= ano_final)]
 df_preco_petroleo_filtrado = df_preco_petroleo.loc[(df_preco_petroleo['Data (Descending)'].dt.year >= ano_inicial) & (df_preco_petroleo['Data (Descending)'].dt.year <= ano_final)]
