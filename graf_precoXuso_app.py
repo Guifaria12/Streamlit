@@ -3,7 +3,6 @@ import plotly.graph_objects as go
 import streamlit as st
 
 
-st.write("Hello World")
 
 # Carregar os dados de preço do petróleo
 url_preco_petroleo = 'https://docs.google.com/spreadsheets/d/1WSL2mbFwfnQR5vDF73UmcOK5_zf5NGelasCCo8_qCOk/export?format=csv'
@@ -30,6 +29,8 @@ df_matriz_energica = df_matriz_energica.loc[df_matriz_energica['Ano'] >= '1987']
 # Dropdowns para selecionar os anos
 ano_inicial = st.selectbox("Selecione o ano inicial:", range(1987, df_matriz_energica['Ano'].dt.year.max() + 1))
 ano_final = st.selectbox("Selecione o ano final:", range(ano_inicial, 2024 + 1))
+
+st.write("Hello World")
 
 # Filtrar os dados com base nos anos selecionados
 df_matriz_energica_filtrado = df_matriz_energica.loc[(df_matriz_energica['Ano'].dt.year >= ano_inicial) & (df_matriz_energica['Ano'].dt.year <= ano_final)]
