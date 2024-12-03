@@ -154,16 +154,15 @@ st.subheader ("Modelos utilizados ")
 
 st.write ("""
 
-**ARIMA (AutoRegressive Integrated Moving Average)**
+**SARIMAX**
 
-* Este modelo foi escolhido por sua robustez na análise de séries temporais com dados estacionários ou transformados para estacionaridade.
+* Excelente para capturar tendências sazonais, padrões históricos de curto e longo prazo, além de ser capaz de incorporar variáveis exógenas que influenciam a série temporal.
 Vantagens:
 Excelente para capturar padrões sazonais e tendências históricas de curto prazo.
 Permite modelar a autocorrelação entre observações.
 
 Desempenho:
-Funcionou bem em séries com padrões previsíveis, mas apresentou limitações ao lidar com dados mais complexos ou não estacionários, especialmente onde mudanças estruturais ocorrem.
-
+Funcionou bem em séries com padrões sazonais e dados históricos previsíveis. No entanto, pode apresentar limitações ao lidar com dados altamente não estacionários ou com mudanças estruturais complexas, mesmo com a inclusão de variáveis exógenas.
 
 **Prophet**
 * O Prophet foi escolhido por sua capacidade de modelar séries temporais com sazonalidades variadas e componentes exógenos, como feriados e eventos especiais.
