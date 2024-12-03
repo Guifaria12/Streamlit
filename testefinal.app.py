@@ -32,6 +32,8 @@ st.write("""
     O preço do petróleo desempenha um papel fundamental na economia global, influenciando mercados financeiros, políticas energéticas e estratégias corporativas em diversos setores, até mesmo em aspectos micro da sociedade (i.e. o preço da gasolina no posto que cotidianamente se abastece o carro para ir ao trabalho). Por ser um dos principais indicadores econômicos, sociais e políticos, compreender sua dinâmica de variação ao longo do tempo é essencial para a tomada de decisões estratégicas em um ambiente econômico volátil e interconectado.
 """)
 
+st.markdown("<hr style='border:1px solid #000000;'>", unsafe_allow_html=True)
+
 st.header("**Análise Exploratória dos Dados**")
 # Carregar os dados de preço do petróleo
 url_preco_petroleo = 'https://docs.google.com/spreadsheets/d/1WSL2mbFwfnQR5vDF73UmcOK5_zf5NGelasCCo8_qCOk/export?format=csv'
